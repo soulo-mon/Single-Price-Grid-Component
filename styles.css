@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 10px 20px;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+.container{
+    width: min(100%, 375px);
+    padding: 50px 10px;
+    display: grid;
+}
+
+.top-container, 
+.bottom-container-first-child, 
+.bottom-container-second-child{
+    height: auto;
+    padding: 20px;
+}
+
+.top-container{
+    background-color: white;
+    
+}
+
+.bottom-container-first-child{
+    background-color:   hsl(179, 62%, 43%);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.bottom-container-second-child{
+    background-color: #4ABEBD ;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.top-container-main-header{
+    color: hsl(179, 62%, 43%);
+    padding-top: 15px;
+}
+
+.top-container-sub-heading{
+    color: #C0DF34;
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.top-container-description{
+    color: #98A6BD;
+    padding-bottom: 15px;
+}
+.bottom-container-first-child-subheading{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.bottom-container-first-child-subheading,
+.bottom-container-second-child-description{
+    padding-top: 10px;
+}
+
+.duration{
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.amount{
+ font-size: 30px;   
+ font-weight: 700;
+}
+
+button{
+    padding: 15px;
+    width: 100%;
+    background-color: #C0DF34;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.bottom-container-second-child-description{
+    max-width: 230px;
+    line-height: 22px;
+    padding-top: 20px;
+    color:azure;
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        margin-top: 100px;
+        width: 630px;
+    }
+
+   .top-container-main-header{
+    font-size: 30px;
+   } 
+
+   .top-container-sub-heading{
+    font-size: 20px;
+   }
+
+   .top-container-description{
+    font-size: 17px;
+   }
+
+   .bottom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .bottom-container-first-child, 
+   .bottom-container-second-child{
+    width: 100%;
+    height: auto;
+   }
+
+   .bottom-container-second-child-description{
+    line-height: 20px;
+   }
+}
